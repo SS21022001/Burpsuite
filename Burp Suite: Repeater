@@ -1,0 +1,70 @@
+Welcome to the Burp: Repeater room!
+
+Having covered the basics of using Burp Suite, this room will dive into one of the more powerful aspects of the framework, namely: the Burp Suite Repeater module.
+We will be covering how to use Repeater to manipulate and arbitrarily resend captured requests, as well as looking at some of the niftier options available in this awesome tool. Finally, we will encounter a series of examples, including a real-world, extra-mile exercise which we will use to consolidate the more theoretical aspects of the room.
+
+If you have not used Burp Suite before and have not completed the Burp Basics room, you may wish to do so now before continuing, as this room builds on the foundations covered there.
+
+Task-1
+
+Deploy the machine (and the AttackBox if you are not using your own attack VM), and let's get started!
+Note: If you are not using the AttackBox and want to connect to this machine without the VPN, you can do so using this link 
+once the machine has fully loaded and an IP address is displayed: https://LAB_WEB_URL.p.thmlabs.com.
+> No Answer needed
+
+Task-2
+
+Familiarise yourself with the Repeater interface.
+> No answer needed
+
+Task-3
+
+Capture a request to http://MACHINE_IP in the Proxy and send it to Repeater.
+Practice modifying and re-sending the request numerous times.
+> No answer needed
+
+Task-4
+
+Experiment with the available view options.
+> No answer needed
+Which view option displays the response in the same format as your browser would?
+> Render
+
+Task-5
+
+Get comfortable with Inspector and practice adding/removing items from the various request sections.
+> No answer needed
+
+Task-6
+
+Capture a request to http://MACHINE_IP/ in the Proxy and send it to Repeater.
+> No answer needed
+Send the request once from Repeater -- you should see the HTML source code for the page you requested in the response tab.
+Try viewing this in one of the other view options (e.g. Rendered).
+> No answer needed
+Send the request. What is the flag you receive?
+> THM{Yzg2MWI2ZDhlYzdlNGFiZTUzZTIzMzVi}
+
+Task-7
+
+Capture a request to one of the numeric products endpoints in the Proxy, then forward it to Repeater.
+> No answer needed
+See if you can get the server to error out with a "500 Internal Server Error" code by changing the number at the end of the request to extreme inputs.
+What is the flag you receive when you cause a 500 error in the endpoint?
+> THM{N2MzMzFhMTA1MmZiYjA2YWQ4M2ZmMzhl}
+
+Task-8
+
+We know that there is a vulnerability, and we know where it is. Now we just need to exploit it!
+Let's start by capturing a request to http://MACHINE_IP/about/2 in the Burp Proxy. Once you have captured the request, send it to Repeater with Ctrl + R or by right-clicking and choosing "Send to Repeater".
+> No answer needed
+You should see that the server responds with a "500 Internal Server Error", indicating that we successfully broke the query:
+> No answer needed
+What is the flag?
+THM{ZGE3OTUyZGMyMzkwNjJmZjg3Mzk1NjJh}
+
+Task-9
+
+I can use Burp Suite Repeater!
+> No answer needed
+
