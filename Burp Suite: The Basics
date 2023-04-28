@@ -1,0 +1,124 @@
+Welcome to Burp Suite Basics!
+
+This room will cover the foundations of using the Burp Suite web application framework.
+Specifically, we will be looking at:
+
+What Burp Suite is
+An overview of the available tools in the framework
+Installing Burp Suite for yourself
+Navigating and configuring Burp Suite.
+We will also be introducing the core of the Burp Suite framework: the Burp Proxy. 
+This room is primarily designed to provide a foundational knowledge of Burp Suite which can then be built upon further in the other rooms of the Burp module; 
+as such, it will be a lot heavier in theory than subsequent rooms, which take more of a practical approach. You are advised to read the information here and follow along 
+yourself with a copy of the tool if you haven't used Burp Suite before. Experimentation is key: use this information in tandem with playing around with the app for yourself to 
+build a foundation for using the framework, which can then be built upon in later rooms.
+
+Let's begin!
+
+Task-1
+
+Deploy the machine attached to the task by pressing the green "Start Machine" button, as well as the AttackBox (using the "Start AttackBox" button at the top of the page) if you 
+are not using your own machine. 
+
+Note: If you are not using the AttackBox and want to connect to this machine without the VPN, you can do so using this link once the machine has fully loaded and an IP address is 
+displayed: https://LAB_WEB_URL.p.thmlabs.com.
+> No answer needed
+
+Task-2
+
+Which edition of Burp Suite will we be using in this module?
+> Burp Suite Community
+Which edition of Burp Suite runs on a server and provides constant scanning for target web apps?
+> Burp Suite Enterprise
+Burp Suite is frequently used when attacking web applications and ______ applications.
+> mobile
+
+Task-3
+
+Which Burp Suite feature allows us to intercept requests between ourselves and the target?
+> proxy
+Which Burp tool would we use if we wanted to bruteforce a login form?
+> intruder
+
+Task-4
+
+If you have chosen not to use the AttackBox, make sure that you have a copy of Burp Suite installed before proceeding.
+> No answer needed
+
+Task-5
+
+Open Burp Suite and have a look around the dashboard. Make sure that you are comfortable with it before moving on.
+> No answer needed
+
+Task-6
+
+Get comfortable navigating around the top menu bars.
+> No answer needed
+
+Task-7
+
+Change the Burp Suite theme to dark mode
+> No answer needed
+In which Project options sub-tab can you find reference to a "Cookie jar"?
+> sessions
+In which User options sub-tab can you change the Burp Suite update behaviour?
+> misc
+What is the name of the section within the User options "Misc" sub-tab which allows you to change the Burp Suite keybindings?
+> Hotkeys
+If we have uploaded Client-Side TLS certificates in the User options tab, can we override these on a per-project basis (Aye/Nay)?
+> Aye
+There are many more configuration options available. Take the time to read through them.
+In the next section, we will cover the Burp Proxy -- a much more hands-on aspect of the room.
+> No answer needed
+
+Task-8
+
+Which button would we choose to send an intercepted request to the target in Burp Proxy?
+> forword
+What is the default keybind for this?
+Note: Assume you are using Windows or Linux (i.e. swap Cmd for Ctrl). 
+> Ctrl+F
+
+Task-9
+
+There is one particularly useful option that allows you to intercept and modify the response to your request.
+What is this option?
+Note: The option is in a dropdown sub-menu.
+> Response to this request
+[Bonus Question -- Optional] Try installing FoxyProxy standard and have a look at the pattern matching features.
+> No answer needed
+
+Task-10
+
+If you are not using the AttackBox, configure Firefox (or your browser of choice) to accept the Portswigger CA certificate for TLS communication through the Burp Proxy.
+> No answer needed
+
+Task-11
+
+Using the in-built browser, make a request to http://MACHINE_IP/ and capture it in the proxy.
+> No answer needed
+
+Task-12
+
+Add http://MACHINE_IP/ to your scope and change the Proxy settings to only intercept traffic to in-scope targets.
+See the difference between the amount of traffic getting caught by the proxy before and after limiting the scope.
+> No answer needed
+
+Task-13
+
+Take a look around the site on http://MACHINE_IP/ -- we will be using this a lot throughout the module. Visit every page linked to from the homepage, then check your sitemap -- one endpoint should stand out as being very unusual!
+Visit this in your browser (or use the "Response" section of the site map entry for that endpoint)
+What is the flag you receive?
+> THM{NmNlZTliNGE1MWU1ZTQzMzgzNmFiNWVk}
+Look through the Issue Definitions list.
+What is the typical severity of a Vulnerable JavaScript dependency?
+> low
+
+Task-14
+
+NO ANSWER NEEDED!!
+
+Task-15
+
+I understand the fundamentals of using Burp Suite!
+> No answer needed
