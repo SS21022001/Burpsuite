@@ -1,7 +1,8 @@
 Welcome to the Burp: Repeater room!
 
 Having covered the basics of using Burp Suite, this room will dive into one of the more powerful aspects of the framework, namely: the Burp Suite Repeater module.
-We will be covering how to use Repeater to manipulate and arbitrarily resend captured requests, as well as looking at some of the niftier options available in this awesome tool. Finally, we will encounter a series of examples, including a real-world, extra-mile exercise which we will use to consolidate the more theoretical aspects of the room.
+We will be covering how to use Repeater to manipulate and arbitrarily resend captured requests, as well as looking at some of the niftier options available in this awesome tool. Finally, we will encounter a series of examples, 
+including a real-world, extra-mile exercise which we will use to consolidate the more theoretical aspects of the room.
 
 If you have not used Burp Suite before and have not completed the Burp Basics room, you may wish to do so now before continuing, as this room builds on the foundations covered there.
 
